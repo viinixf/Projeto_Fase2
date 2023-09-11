@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        header {
+            
+            box-shadow: 0px 0px 20px rgba(245, 5, 5, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        header,
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+        /* Estilos CSS para centralizar o formulário */
+        body {
+            background-image: url(imagens/Fases-da-vida-de-um-cachorro.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Para centralizar verticalmente também */
+            margin: 0;
+        }
+
+        /* Estilize o formulário como desejar */
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cabeçalho teste</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Cadastre-se</a></li>
+                <li><a href="#">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="...(1)..." method="post">
+        <fieldset>
+            <legend>Cadastro do cliente</legend>
+            <br>
+            <label>Informe o nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" />
+            <br>
+            <br>
+            <label>Data de nascimento:</label>
+            <input type="text" name="data_nascimento" placeholder="Digite a data de nascimento" required />
+            <br>
+            <br>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Digite seu e-mail" required />
+            <br>
+            <br>
+            <label>CPF:</label>
+            <input type="text" name="cpf" placeholder="Digite seu CPF" required />
+            <br>
+            <br>
+            <label>Senha:</label>
+            <input type="password" name="senha" placeholder="Digite sua senha" />
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
